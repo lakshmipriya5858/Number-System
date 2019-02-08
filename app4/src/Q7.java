@@ -1,0 +1,23 @@
+//7.find out given number is an odd or even?
+class Q7 
+{
+	public static void main(String[] args) 
+	{
+		if(args.length < 1)
+		{
+		System.out.println("plz supply 1 cla");
+		return;
+	    }
+	int i ==Integer.parseInt(args[0]);
+	boolean isOdd = (i % 2 == 0) ? false : true;
+	if (isOdd)
+	  {
+		System.out.print(i + "is an odd number");
+	  }
+	else
+		{
+		System.out.print(i + "is an even number");
+		}
+	}
+}
+

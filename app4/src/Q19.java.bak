@@ -1,0 +1,12 @@
+//assume given number containing 3 digits.
+//   now check it out first two digits sum is 3rd digit or not?
+//ex : 123
+//ex : 347
+// ex : 268
+class Q19 
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("Hello World!");
+	}
+}

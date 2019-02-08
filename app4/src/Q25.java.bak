@@ -1,0 +1,8 @@
+//25.Develop a program to print 20 prime numbers from 100
+class  Q25
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("Hello World!");
+	}
+}

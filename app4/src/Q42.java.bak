@@ -1,0 +1,45 @@
+// 42.find out  all  Armstrong numbers between 2 given numbers ?
+
+class Q42
+{
+	public static void main(String[] args) 
+	{
+		if(args.length<2)
+		{
+			System.out.println("pls supply 2 command line agrs");
+			return;
+		}
+		int num1 = Integer.parseInt(args[0]);
+		int num2= Integer.parseInt(args[1]);
+			int currentNum=num1;
+     		while (currentNum < num2)
+			{
+				int i=currentNum ,j=currentNum;
+				int count=0;
+				while(i!=0)
+				{
+
+				i=i/10;
+				count++;
+             }
+	    	int sum=0  , digit ,digitPowerValue =1;
+			while(j!=0)
+		{
+				digit=j%10;
+				digitPowerValue=1;
+		        for(int k=1;k<=count;k++)
+			{
+				digitPowerValue=digitPowerValue  *  digit;
+			}
+			sum+=digitPowerValue;
+			j = j / 10;
+     		}
+		if(currentNum==sum)
+		{
+			System.out.println(num+ "is an armstrong number");
+			
+		}
+		currentNum++;
+   	}					
+	}
+}
